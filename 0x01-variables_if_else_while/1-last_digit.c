@@ -20,17 +20,17 @@ len = strlen(nu);
 last = nu[len - 1];
 lasts = last - '0';
 
-if (lasts > 5)
+if (n < 0)
 {
-printf("Last digit of %d is %d and is greater than 5\n", n, lasts);
+printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lasts);
 }
 else if (lasts == 0)
 {
 printf("Last digit of %d is %d and is 0\n", n, lasts);
 }
-else if (n < 0)
+else if (lasts > 5)
 {
-printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lasts);
+printf("Last digit of %d is %d and is greater than 5\n", n, lasts);
 }
 return (0);
 }
