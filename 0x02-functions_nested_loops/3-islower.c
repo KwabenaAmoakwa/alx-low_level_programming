@@ -4,11 +4,13 @@
  * _islower - checks if letter is lowercase
  * @c: the character to be checked
  *
- * Return: 1 is the character is lowercase. 0 otherwise
+ * Return: 1 if the character is lowercase. 0 otherwise
  */
 int _islower(int c)
 {
-int i;
-i = islower(c);
-return (i);
+if ( c > 97 && c < 123 )
+{
+return (1);
+}
+return (0);
 }
