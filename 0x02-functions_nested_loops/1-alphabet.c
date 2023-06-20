@@ -3,7 +3,7 @@
  * alphabet - prints alphabets
  *
  */
-void alphabet(void)
+void print_alphabet(void)
 {
 char save[] = "abcdefghijklmnopqrstuvwxyz";
 int i;
