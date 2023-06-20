@@ -1,15 +1,5 @@
 #include "main.h"
 /**
- * main - check the code
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-alphabet();
-return (0);
-}
-/**
  * alphabet - prints alphabets
  *
  */
@@ -22,5 +12,6 @@ for (i = 0; i < 26; i++)
 {
 _putchar(save[i]);
 }
-return (0);
+_putchar('\n');
+return;
 }
