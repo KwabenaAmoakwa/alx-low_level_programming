@@ -3,11 +3,10 @@
  * _abs - prints absolute value of integer
  * @c: number to be checked
  *
- * Return: absolute value of number 
+ * Return: absolute value of number
  */
 int _abs(int c)
 {
-	
 int u;
 if (c > 0)
 {
