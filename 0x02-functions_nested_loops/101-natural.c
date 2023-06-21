@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main"
 /**
  * main - check the code
  *
@@ -18,4 +18,5 @@ u = u + i;
 }
 }
 printf("%d", u);
+return;
 }
