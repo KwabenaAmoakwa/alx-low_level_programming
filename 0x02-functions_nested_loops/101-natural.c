@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main"
 /**
  * main - check the code
  *
@@ -12,11 +11,11 @@ int i;
 
 for (i = 0; i < 1024; i++)
 {
-if (i % 5 == 0)
+if ((i % 5) == 0 || (i % 3) == 0)
 {
 u = u + i;
 }
 }
 printf("%d", u);
-return;
+return (0);
 }
