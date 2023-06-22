@@ -13,9 +13,8 @@ unsigned long c, d, o;
 
 c = 1;
 o = 0;
-printf("%lu\n", o);
-printf("%lu\n", c);
-for (i = 0; i <= 48; i++)
+
+for (i = 0; i < 50; i++)
 {
 d = o + c;
 o = c;
