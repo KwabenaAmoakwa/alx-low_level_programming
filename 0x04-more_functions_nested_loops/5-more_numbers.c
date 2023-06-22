@@ -12,13 +12,13 @@ for (i = 0; i < 10; i++)
 for (r = 0; r < 15; r++)
 {
 if (r < 10)
-{	
+{
 _putchar('0' + r);
 }
-else if(r > 10)
+else if (r > 10)
 {
-_putchar('0' + (r/10));
-_putchar('0' + (r%10));
+_putchar('0' + (r / 10));
+_putchar('0' + (r % 10));
 }
 }
 _putchar('\n');
