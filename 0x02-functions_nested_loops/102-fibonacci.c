@@ -19,7 +19,11 @@ for (i = 0; i < 50; i++)
 d = o + c;
 o = c;
 c = d;
-printf("%lu\n", c);
+printf("%lu", c);
+if (i < 49)
+{
+	printf(", ");
+}
 }
 return (0);
 }
