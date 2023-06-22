@@ -16,6 +16,6 @@ if ((i % 5) == 0 || (i % 3) == 0)
 u = u + i;
 }
 }
-printf("%d", u);
+printf("%d\n", u);
 return (0);
 }
