@@ -1,24 +1,39 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * print_square - prints a square followed by a new line
- *@size: size of square
+ * main - check the code
  *
+ * Return: Always 0.
  */
-void print_square(int size)
+int main(void)
 {
-int i, j;
-if (size > 0)
+int i;
+
+for (i = 1; i < 101; i++)
 {
-for (i = 0; i < size; i++)
+if ((i % 3 == 0) && (i % 5 == 0))
 {
-for (j = 0; j < size; j++)
+printf("FizzBuzz");
+}
+else if (i % 3 == 0)
 {
-_putchar('#');
+printf("Fizz");
 }
-_putchar('\n');
+else if (i % 5 == 0)
+{
+printf("Buzz");
+}
+else
+{
+printf("%d",i);
+}
+if (i != 100)
+{
+printf(" ");
 }
 }
-_putchar('\n');
-return;
+printf("\n");
+return (0);
 }
+
