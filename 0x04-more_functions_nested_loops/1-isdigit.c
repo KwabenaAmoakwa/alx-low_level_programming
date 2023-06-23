@@ -1,11 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 #include <ctype.h>
+
 /**
  * _isdigit - checks if character is a digit
  * @c: character to be checked
  *
- * Returns: 1 if character is a digit
+ * Return: Always 0.
  */
 int _isdigit(int c)
 {
