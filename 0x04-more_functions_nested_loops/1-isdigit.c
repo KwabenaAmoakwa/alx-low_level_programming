@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <stdio.h>
+#include <ctype.h>
 /**
  * _isdigit - checks if character is a digit
  * @c: character to be checked
@@ -8,7 +9,7 @@
  */
 int _isdigit(int c)
 {
-if (c < 58 && c > 47)
+if (isdigit(c))
 {
 return (1);
 }
