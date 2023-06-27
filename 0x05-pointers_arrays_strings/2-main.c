@@ -8,11 +8,14 @@
  */
 int main(void)
 {
-    char *str;
+    char *str, *hol;
     int len;
 
     str = "My first strlen!";
+    hol = "Holberton!";
     len = _strlen(str);
+    printf("%d\n", len);
+    len = _strlen(hol);
     printf("%d\n", len);
     return (0);
 }
