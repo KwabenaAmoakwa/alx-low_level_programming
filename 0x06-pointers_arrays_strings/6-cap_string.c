@@ -10,7 +10,7 @@
  */
 char *cap_string(char *c)
 {
-	char seps[] = " \n,;.!?(){}\"";
+	char seps[] = "\t \n,;.!?(){}\"";
 	int len = strlen(c);
 	int len1 = strlen(seps);
 	int i, b;
