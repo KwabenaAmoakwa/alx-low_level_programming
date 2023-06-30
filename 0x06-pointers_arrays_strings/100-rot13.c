@@ -2,28 +2,28 @@
 #include <string.h>
 
 /**
- * leet - encodes a string into 1337
+ * rot13 - encodes a string using rot13
  * @c: string
  *
  * Return: an encoded string
  *
  */
-char *leet(char *c)
+char *rot13(char *c)
 {
-	char low[] = "aeotl";
-	char upp[] = "AEOTL";
-	char num[] = "43071";
+	char alph[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char rot1[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 	int len = strlen(c);
-	int len1 = strlen(low);
+	int len1 = strlen(alph);
 	int i, k;
 
 for (i = 0; i < len; i++)
 {
 for (k = 0; k < len1; k++)
 {
-if ((c[i] == low[k]) || (c[i] == upp[k]))
+if (c[i] == alph[k])
 {
-c[i] = num[k];
+c[i] = rot1[k];
+break;
 }
 }
 }
