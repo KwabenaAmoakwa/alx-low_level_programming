@@ -17,8 +17,6 @@ char *cap_string(char *c)
 
 	for (i = 0; i < len; i++)
 	{
-		if (i != len - 1)
-		{
 		for (b = 0; b < len1; b++)
 		{
 			if ((c[i] == seps[b]) && (c[i + 1] > 96 && c[i + 1] < 123))
@@ -27,7 +25,6 @@ char *cap_string(char *c)
 				break;
 			}
 		}
-	}
 }
 return (c);
 }
