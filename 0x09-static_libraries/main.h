@@ -20,3 +20,5 @@ char *_strncat(char *dest, char *src, int n);
 char *_strncpy(char *dest, char *src, int n);
 void _puts(char *str);
 int _abs(int c);
+char *_strchr(char *s, char c);
+int _atoi(char *s);
