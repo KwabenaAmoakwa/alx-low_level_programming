@@ -2,4 +2,4 @@
 
 gcc -c *.c
 
-ar rcs liball.a | find . -type f -name "*.o"
+ar rcs liball.a *.o
