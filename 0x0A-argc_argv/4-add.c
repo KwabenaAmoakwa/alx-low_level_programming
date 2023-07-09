@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * main - multiplies two numbers
@@ -11,7 +12,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, j = 0, sum = 0;
+	int i, p, j = 0, sum = 0, len;
 
 	if (argc < 1)
 	{
@@ -21,15 +22,25 @@ int main(int argc, char *argv[])
 	{
 	for (i = 1; i < argc; i++)
 	{
-	if (atoi(argv[i]) == 0)
+	len = strlen(argv[i]);
+
+	if (len == 1 && *argv[i] > 96 && *argv[i] < 123)
 	{
 	j = 1;
 	break;
 	}
-	else if (atoi(argv[i]) > 0)
+	else if (len > 1)
 	{
-	sum += atoi(argv[i]);
+		for (p = 0; p < len; p++)
+		{
+			if (argv[i][p] > 96 && argv[i][p] < 123)
+			{
+				j = 1;
+				break;
+			}
+		}
 	}
+	sum += atoi(argv[i]);
 	}
 	if (j == 1)
 	{
