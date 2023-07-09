@@ -21,6 +21,11 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	rem = atoi(argv[1]);
+	if (rem < 0)
+	{
+		printf("0\n");
+		return (1);
+	}
 	for (i = 0; i < 5; i++)
 	{
 		if (rem % ch[i] == 0)
