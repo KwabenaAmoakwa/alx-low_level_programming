@@ -10,13 +10,22 @@
  * Return: Always 0 (Success)
  */
 
-int main(__attribute__ ((unused)) int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int ch[] = {25, 10, 5, 2, 1};
 	int rem, i, b = 0;
 
+	if (argc < 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
 	rem = atoi(argv[1]);
-
+	if (rem < 0)
+        {
+                printf("Error\n");
+                return (1);
+        }
 	for (i = 0; i < 5; i++)
 	{
 		if (rem % ch[i] == 0)
