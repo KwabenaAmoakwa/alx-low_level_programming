@@ -26,6 +26,8 @@ char *_memset(char *s, char b, unsigned int n)
  * @nmemb: number of array elements
  * @size: size of array
  *
+ * Return: pointer to string
+ *
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
