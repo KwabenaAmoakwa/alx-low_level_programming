@@ -4,4 +4,10 @@
 
 /**
  * free_dog - frees dogs
- * @d: 
+ * @d: variable
+ *
+ */
+void free_dog(dog_t *d)
+{
+	free(d);
+}
