@@ -16,6 +16,8 @@ int a = (int)n;
 va_list args;
 char *s;
 
+if (a == 0)
+	return;
 va_start(args, n);
 if (separator != NULL)
 	s = (char *)separator;
