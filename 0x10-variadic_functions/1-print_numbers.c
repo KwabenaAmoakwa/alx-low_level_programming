@@ -38,4 +38,5 @@ for (; a != 0; a--)
 		printf("%d\n", va_arg(args, int));
 	}
 }
+va_end(args);
 }
