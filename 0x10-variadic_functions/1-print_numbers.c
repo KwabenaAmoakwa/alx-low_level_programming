@@ -19,10 +19,9 @@ char *s;
 if (n == 0)
 	return;
 a = (int)n;
-
+s = (char *)separator;
 va_start(args, n);
-if (separator != NULL)
-	s = (char *)separator;
+
 for (; a != 0; a--)
 {
 	if (a != 1 && separator != NULL)
