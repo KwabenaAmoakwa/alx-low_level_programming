@@ -26,21 +26,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		if (i != 1 && separator != NULL)
 		{
-			if (va_arg(args, char *) == NULL)
-			{
-				printf("(nil)%s", s);
-			}
-			else
-				printf("%s%s", va_arg(args, char *), s);
+			printf("%s%s", va_arg(args, char *), s);
 		}
 		else if (i != 1)
 		{
-			if (va_arg(args, char *) == NULL)
-			{
-				printf("(nil)");
-			}
-			else
-				printf("%s", va_arg(args, char *));
+			printf("%s", va_arg(args, char *));
 		}
 		else
 			printf("%s\n", va_arg(args, char *));
