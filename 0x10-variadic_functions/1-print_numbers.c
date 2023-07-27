@@ -12,12 +12,22 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
+<<<<<<< HEAD
 int a = (int)n;
 if (separator != NULL)
 	char *s = (char *)separator;
+=======
+int a;
+>>>>>>> 63831b78671adfa1f5e6a9f3c869247f7f3b953b
 va_list args;
+char *s;
 
+if (n == 0)
+	return;
+a = (int)n;
+s = (char *)separator;
 va_start(args, n);
+
 for (; a != 0; a--)
 {
 	if (a != 1 && separator != NULL)
@@ -33,4 +43,5 @@ for (; a != 0; a--)
 		printf("%d\n", va_arg(args, int));
 	}
 }
+va_end(args);
 }
