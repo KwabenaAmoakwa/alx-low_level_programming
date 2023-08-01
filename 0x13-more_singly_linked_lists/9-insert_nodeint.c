@@ -34,9 +34,9 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			mid->n = n;
 			mid->next = temp->next;
 			temp->next = mid;
-			break;
+			return (mid);
 		}
 		c++;
 	}
-	return (mid);
+	return (NULL);
 }
